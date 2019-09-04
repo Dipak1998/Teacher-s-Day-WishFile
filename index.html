@@ -1,0 +1,118 @@
+<html>
+    <head>
+
+    </head>
+    <style>
+        /* div.detail{
+            display: flex;
+            }
+        div.detail div *{
+                flex: 1;
+            }
+        div.detail div.image1{
+            height: auto;
+            width: auto;
+        }
+        div.detail div.image2{
+            height: auto;
+            width: auto;
+        } */
+
+        div.detail div.Text marquee h1{
+            color: blue;
+        }
+        div.detail div.Text marquee h2{
+            color: red;
+        }
+        div.detail div.Text marquee h3{
+            color: rgb(235, 83, 202);
+        }
+        div.detail div p{
+            text-align: center;
+            color:red;
+        }
+        /* div.image1 img{
+            width: 100%;
+        } */
+        /* audio{
+            width: 0;
+        } */
+
+        @media screen and (min-width: 400px) {
+            body {
+                background-image: url("download1.jpg");
+                background-repeat: no-repeat;
+                background-size: 168% 168%;
+                }
+                div.detail div>p{
+                 text-align:center;
+                 color:red;
+                 }
+                 div.text marquee h1{
+                     font-size: 40px;
+                 }
+            
+                 div.shyari{
+                     /* text-align: center; */
+                     font-size: 40px;
+                     /* position: fixed;
+                     bottom:280px;
+                     right: 40px;
+                     left:10px;
+                     top:420px; */
+                     
+                     
+                 }
+                 div.From h1{
+                     color:blue;
+                     float: right;
+                 }
+                 div.image1 img{
+                     width: 100%;
+                 }
+        }
+    </style>
+    <body>
+                <!-- <bgsound src="song.mp3"></bgsound> -->
+                <audio id="song" controls autoplay loop>
+
+                <source src="Audio.mp3" autoplay="true" type="audio/mpeg">
+                    
+                  </audio>
+                  <!-- <embed src="song.mp3" autostart=true AutoPlay="true" loop="true" hidden="true" preload="true"> -->
+                <!-- <embed src="song.mp3" type="audio/mpeg" loop="true" hidden="true" autostart="true"> -->
+
+                    <div class="detail">
+                        <div class="Text">
+                                <marquee behavior="alternate"><b>
+                                        <h1>Happy Teacher's Day Sir</h1>
+                                        </b></marquee>
+                                        <!-- <marquee behavior="alternate" direction="right">
+                                        <b><h2>Love You And Miss You</h2></b>
+                                        </marquee> -->
+                        </div>
+                        <div class="shyari">
+                           <p>
+                            आपसे ही सीखा, आपसे ही जाना
+                            </p>
+                            <p>
+                                आप ही को हमने गुरु हैं माना,
+                            </p>
+                            <p>
+                                सीखा हैं सब कुछ आपसे हमने, 
+                            </p>
+                            <p>
+                                कलम का मतलब आपसे हैं जाना
+                            </p>
+                        </div>                       
+                        <div class="image1"><img src="SPic.png"></div>
+                        <!-- <div class="From"><h1>From Dipak</h1></div> -->
+                    </div>
+
+        <script>
+            var audio = document.getElementById('Audio');
+            console.log(audio);
+            audio.play().catch((e)=>console.error(e));
+        </script>
+    </body>
+</html>
